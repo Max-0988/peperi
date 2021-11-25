@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+    <title>test</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Test</h1>
+            <form action="" method="post" name="form" onsubmit="onSubmit()" autocomplete="off" class="form">
+                <div class="addPair">
+                    <label for="newPair" class="pairInput">
+                      Name/Value Pair
+                        <input type="text" id="newPair" name="newPair" class="input" placeholder="Name=Value" required>
+                    </label>
+                    <button type="button" id="addPairBtn" class="addBtn button">
+                    Add
+                    </button>
+                </div>
+                <span class="listName">Name/Value Pair List</span>
+                <div class="pairsList">
+                    <ul id="list" class="list"></ul>
+                    <div class="btns">
+                        <button id="sortByName" class="btn">Sort by Name</button>
+                        <button id="sortByValue" class="btn">Sort by Value</button>
+                        <button id="deletePairBtn" class="btn">Delete</button>
+                        <button id="showXml" class="btn">Show XML</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+       
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
